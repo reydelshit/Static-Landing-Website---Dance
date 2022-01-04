@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    max-width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 2rem;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header__nav ul a{
+
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(172, 67%, 45%);
+}
+
+.header__nav ul a:hover{
+
+    color: white;
+}
+
+.header__nav .header__left a{
+    color: #22272e;
+}
+
+
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+main::before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: hsl(172, 67%, 45%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+main::after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #22272e;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.home__picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogann{
+    position: relative;
+    font-size: 10rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.danc{
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    color: black;
+}
+
+.is{
+    position: absolute;
+    top: 15rem;
+    left: 45%;
+    right: 55%;
+    color: white;
+}
+
+.life{
+    position: absolute;
+    right: 15rem;
+    top: 25rem;
+    color: hsl(172, 67%, 45%);
+}
+
+.second__page{
+
+    width: 100%;
+    height: 700px;
+    background-color: #22272e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.second__picture{
+
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+}
+
+.second__desc{
+
+    padding: 0 5rem;
+    width: 60%;
+}
+
+.second__desc h1{
+
+    color: hsl(172, 67%, 45%);
+    margin-bottom: 2rem;
+}
+
+.second__desc p{
+
+    color: rgb(177, 174, 174);
+}
+
+.dac{
+    transform: scaleX(-1);
+}
+
+.types__dances{
+
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #22272e;
+}
+
+.types__dances .types__t{
+
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: hsl(172, 67%, 45%);
+}
+
+
+.dances{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    padding: 0 2rem;
+    gap: 1rem;
+    padding: 1em;
+}
+
+.types{
+
+    height: 12rem;
+    border-radius: 5px;
+    border: 1px solid hsl(172, 67%, 45%);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.types img{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.types h1{
+
+    display: block;
+    font-size: 1rem;
+    background-color: hsl(172, 67%, 45%);
+    height: 2rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+   
+}
+
+footer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #22272e;
+    height: 4rem;
+    color: white;
+}
+
+.benifit{
+    margin-left: 2rem;
+    color: rgb(177, 174, 174);
+    list-style-type: circle;
+    
+}
+
+.names{
+    color: hsl(172, 67%, 45%);
+}
+
+.source{
+
+    color: hsl(172, 67%, 45%);
+    text-decoration: none;
+    font-size: 1rem;
+}
