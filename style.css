@@ -20,13 +20,14 @@ header{
 }
 
 
-header nav {
+header ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    list-style-type: none;
 }
 
-.header__nav ul a{
+.header__nav li a{
 
     cursor: pointer;
     font-weight: 600;
@@ -34,7 +35,7 @@ header nav {
     color: hsl(172, 67%, 45%);
 }
 
-.header__nav ul a:hover{
+.header__nav li a:hover{
 
     color: white;
 }
@@ -198,6 +199,8 @@ main::after{
 .types h1{
 
     display: block;
+    text-align: center;
+    align-self: center;
     font-size: 1rem;
     background-color: hsl(172, 67%, 45%);
     height: 2rem;
